@@ -1,0 +1,6 @@
+$yandexPassportOauthToken = "y0_AQAAAAAYNz_fAATuwQAAAADLokXKj0SMF9muRZSBtwd0ZxQwFCQTak0"
+$Body = @{ yandexPassportOauthToken = "$yandexPassportOauthToken" } | ConvertTo-Json -Compress
+Invoke-RestMethod -Method 'POST' -Uri 'https://iam.api.cloud.yandex.net/iam/v1/tokens' -Body $Body -ContentType 'Application/json' | Select-Object -ExpandProperty iamToken
+
+
+t1.9euelZqNjZ6amJWJlpGVlc2cjZTJl-3rnpWajJrInZPHiZiej5DLyZmakJfl8_d3bQxo-e9zOXsx_d3z9zccCmj573M5ezH9._rnk14Cm8jUGqkvF0wPXCwaf9vxYqTf8ZwnCsa0odSSBbarSj4bM98erixTKHGzuLdMV4UscizYU-DQgLyaTCg
